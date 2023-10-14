@@ -1,0 +1,112 @@
+header{
+    background-color: $brand-color;
+    padding: 18px 0;
+    z-index:999;
+    @include breakpoint(lp){
+        padding:6px 0;
+    }
+    @include breakpoint(lg){
+        padding:6px 0;
+    }
+    @include breakpoint(md){
+        padding:6px 0;
+    }
+    @include breakpoint(sm){
+        padding:6px 0;
+    }
+    @include p-fixed;
+    .header-left{
+        width: calc(50% - 72.5px);
+    }
+    .header-inner{
+       
+        @include flex-vertical-between;
+        @include breakpoint(sm){
+            justify-content: space-between;
+        }
+    }
+    .header-center{
+        width: 135px;
+        text-align: center;
+        img{
+            max-width: 200px;
+            @include breakpoint(lp){
+                max-width: 130px;
+            }
+            @include breakpoint(lg){
+                max-width: 130px;
+            }
+            @include breakpoint(md){
+                max-width: 130px;
+            }
+            @include breakpoint(sm){
+                max-width: 130px;
+            }
+            @include breakpoint(xs){
+                max-width: 130px;
+            }
+        }
+    }
+    .header-right{
+        width: calc(50% - 72.5px);
+        @include flex-center;
+        justify-content: flex-end;
+        .custom-blk-btn{
+            padding: 10px 14px;
+            border: 1px solid transparent;
+            @include custom-transition;
+            i{
+                color: $brand-color;
+                @include custom-transition;
+                
+            }
+            &:hover{
+                border: 1px solid $black-color;
+                background: transparent;
+                i{
+                    color: $black-color !important;
+                }
+            }
+           
+        }
+    // .btn-common{
+    //     padding: 10px 14px;
+    //     }
+        .dropdown{
+            margin-left: 10px;
+            .dropdown-menu{
+                right: auto !important;
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+                top:unset !important;
+                @include breakpoint(lg){
+                    left: -20px !important;  
+                }
+                @include breakpoint(md){
+                    left: -20px !important;  
+                }
+                @include breakpoint(sm){
+                    left: -40px !important;  
+                }
+                .dropdown-item{
+                    i{
+                        margin-right: 10px;
+                        min-width: 20px;
+                    }
+                    &:nth-last-child(1){
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    .header-left{
+        .sidebar-btn{
+            i{
+                @include breakpoint(xs){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

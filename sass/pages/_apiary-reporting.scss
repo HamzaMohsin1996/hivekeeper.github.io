@@ -1,0 +1,40 @@
+.apiary-reporting{
+    .custom-accordian{
+        margin: 1rem 0;
+        @include breakpoint(laptop){
+            margin: 0.3rem 0;
+        }
+        
+    }
+    .custom-table{
+        .custom-underline-link{
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            color: $blue-clr !important;
+            @include custom-transition;
+            @include breakpoint(laptop){
+                font-size: 16px;
+            }
+            @include breakpoint(md){
+                font-size: 16px;
+            }
+            @include breakpoint(sm){
+                font-size: 14px;
+            }
+            @include breakpoint(xs){
+                font-size: 12px;
+            }
+            &::before{
+                width: 100%;
+            background-color: $blue-clr !important; 
+            }
+            &:hover{
+                color: $black-color !important;
+                &::before{
+                    background-color: $black-color !important;  
+                }
+            }
+        }
+    }
+}

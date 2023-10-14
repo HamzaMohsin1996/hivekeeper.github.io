@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport"
+         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no  shrink-to-fit=no">
+      <meta name="format-detection" content="telephone=no">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700s;800;900&display=swap" rel="stylesheet">
+      <title>Inspection</title>
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+      <link href="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"/>
+      <link rel="stylesheet" href="./style-en.css">
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="header-inner">
+               <div class="header-left">
+                  <button class="sidebar-btn"><i class="fa fa-2x fa-bars"></i></button>
+               </div>
+               <div class="header-center">
+                  <img src="./images/clr-logo.png" alt="" />
+               </div>
+               <div class="header-right">
+                  <div class="dropdown custom-dropdown">
+                     <button type="button" class="map-pin-btn btn-common dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-compass "></i>
+                     </button>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-camera"></i>Camera</a>
+                        <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-video-camera"></i>Video</a>
+                        <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-microphone"></i>Mic</a>
+                     </div>
+                  </div>
+                  <div class="dropdown custom-dropdown">
+                     <button type="button" class="custom-blk-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-user"></i>
+                     </button>
+                     <div class="dropdown-menu">
+                        <div class="profile-img border-bottom">
+                           <img src="./images/profile.png" alt=""/>
+                           <h6>John Doe</h6>
+                        </div>
+                        <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>My Profile</a>
+                        <a class="dropdown-item " href="user-access.html"><i class="fa fa-share-alt "></i>Shared Apiaries</a>
+                        <a class="dropdown-item" href="membership.html"><i class="fa fa-id-card"-alt"></i>Membership </a>
+                        <a class="dropdown-item border-bottom " href="Settings.html"><i class="fa fa-cog"></i>Settings </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="sidebar-nav">
+         <div class="sidebar-nav-header">
+            <img src="./images/sidebar-logo.png" alt="" />
+         </div>
+         <ul class="sidebar-links-ul">
+            <li>
+               <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/apiary.png" alt="" /><span>My Bees</span></a>
+               <div class="second-sidebar">
+                  <div class="sidebar-nav-header">
+                     <h5>My Bees</h5>
+                  </div>
+                  <ul class="second-sidebar-ul">
+                     <li>
+                        <a href="home.html" class="custom-underline-link ">Map</a>
+                     </li>
+                     <li>
+                        <a href="forest-apiary-list.html" class="custom-underline-link">My Apiaries</a>
+                     </li>
+                     <li>
+                        <a href="timeline.html" class="custom-underline-link">My Timeline</a>
+                     </li>
+                     <li>
+                        <a href="gallery.html" class="custom-underline-link">My Gallery</a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/observations.png" alt="" /><span>Reports</span></a>
+               <div class="second-sidebar">
+                  <div class="sidebar-nav-header">
+                     <h5>Reports</h5>
+                  </div>
+                  <ul class="second-sidebar-ul">
+                     <li>
+                        <a href="ApiaryReporting.html" class="custom-underline-link ">Apiary and Hive Reporting</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">Queen Reporting</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">Harvest Reporting</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">Forage Reporting</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">Other Reporting</a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <a href="observation.html" class="custom-underline-link"><img src="./images/action.png" alt="" /><span>Observation</span></a>
+            </li>
+            <li >
+               <a href="action.html" class="custom-underline-link"><img src="./images/inspection.png" alt="" /><span>Action</span></a>
+            </li>
+            <li>
+               <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/user.png" alt="" /><span>Inspection</span></a>
+               <div class="second-sidebar">
+                  <div class="sidebar-nav-header">
+                     <h5>Inspection</h5>
+                  </div>
+                  <ul class="second-sidebar-ul">
+                     <li>
+                        <a href="full-hive-inspection.html" class="custom-underline-link ">Full Hive Inspection</a>
+                     </li>
+                     <li>
+                        <a href="standard-hive.html" class="custom-underline-link">Standard Hive Inspection</a>
+                     </li>
+                     <li>
+                        <a href="apiaryInspection.html" class="custom-underline-link">Apiary Inspection</a>
+                     </li>
+                     <li>
+                        <a href="external-hive-inspection.html" class="custom-underline-link">External Hive Inspection</a>
+                     </li>
+                     <li>
+                        <a href="varroa-check.html" class="custom-underline-link">Varroa Check</a>
+                     </li>
+                     <li>
+                        <a href="dead-hive-inspection.html" class="custom-underline-link">Dead Hive Inspection</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">Healthy Colony Checklist</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">First Spring Inspection</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">Winter Pack Down Inspection</a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <a href="javascript:void(0)" class="custom-underline-link"><img src="./images/membership.png" alt="" /><span>Hive School</span></a>
+            </li>
+            <li>
+               <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/settings.png" alt="" /><span>Calendar and Timeline</span></a>
+               <div class="second-sidebar">
+                  <div class="sidebar-nav-header">
+                     <h5>Calender And Timeline</h5>
+                  </div>
+                  <ul class="second-sidebar-ul">
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link ">Timeline</a>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="custom-underline-link">Calendar</a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+         </uls>
+      </div>
+      <div class="main-wrapper">
+         <section>
+            <div class="container">
+               <div class="main-wrapper-inner">
+                  <h4 class="underline-yellow">External Hive Inspection</h4>
+                  <section class="observation">
+                     <div class="row align-items-center">
+                        <div class="col-md-3  col-sm-6 py-2 ">
+                           <input type="text" class="custom-input" placeholder="Apiary Name">
+                        </div>
+                        <div class="col-md-3 col-sm-6 py-2">
+                           <input type="text" class="custom-input" placeholder="Hive Name">
+                        </div>
+                        <div class="col-md-3 col-sm-6 py-2">
+                           <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                              <input class="custom-input" type="text" readonly placeholder="Date"/>
+                              <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 text-center py-2 barcode-img">
+                           <img src="./images/barcode-img.png" alt="Barcode Image"/>
+                        </div>
+                     </div>
+                     <div class="container">
+                        <div class="row">
+                           <div class=" col-12 custom-tabs observation-btns p-0">
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                               
+                                 <li class="nav-item">
+                                    <a class="nav-link active" id="hive-tab" data-toggle="tab" href="#hive" role="tab" aria-controls="hive" aria-selected="false">Hive</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="others-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false">Others</a>
+                                 </li>
+                              </ul>
+                              <div class="tab-content" id="profile-tab-content">
+                               
+                                 <div class="tab-pane fade show active" id="hive" role="tabpanel" aria-labelledby="hive-tab">
+                                  <h4 class="text-left medium">Hive Status</h4>
+                                  <div class="custom-accordian" id="accordion-2">
+                                    <div class="card-header" id="headingFive">
+                                       <button class="accordian-btn" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        Status:
+                                       </button>
+                                       <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                          <div class="custom-flex-center">
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select" checked/>
+                                                <label for="">Active</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Hive absconded</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Combined with another hive</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Sold Hive</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Died from external issue (fire, flood, bears)</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">No Queen (Colony died out)</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Death caused by Pests</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Death caused by Disease</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Death by Pesticide</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Death by Cold</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Death by Starvation</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Death (other)</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="single-select"/>
+                                                <label for="">Death (cause unknown)</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-header" id="headingSix">
+                                       <button class="accordian-btn collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Entrance Activity:
+                                       </button>
+                                       <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                          <div class="custom-flex-center">
+                                             <div class="tag">
+                                                <input type="checkbox" name="activity"/>
+                                                <label for="">None</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="activity"/>
+                                                <label for="">Slow</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="activity"/>
+                                                <label for="">Average</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="activity"/>
+                                                <label for="">Very Low</label>
+                                             </div>
+                                             <div class="tag">
+                                                <input type="checkbox" name="activity"/>
+                                                <label for="">Busy</label>
+                                             </div>
+                                             <div class="tag">
+                                              <input type="checkbox" name="activity"/>
+                                              <label for="">Very Busy</label>
+                                           </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="card-header" id="headingnine">
+                                      <button class="accordian-btn collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        Hive Strength:
+                                      </button>
+                                      <div id="collapseNine" class="collapse" aria-labelledby="headingnine" data-parent="#accordion-2">
+                                         <div class="card-body">
+                                            <div class="custom-flex-center">
+                                               <div class="tag">
+                                                  <input type="checkbox" name="Strength"/>
+                                                  <label for="">Very Week</label>
+                                               </div>
+                                               <div class="tag">
+                                                  <input type="checkbox" name="Strength"/>
+                                                  <label for="">Weak</label>
+                                               </div>
+                                               <div class="tag">
+                                                  <input type="checkbox" name="Strength"/>
+                                                  <label for="">Normal</label>
+                                               </div>
+                                               <div class="tag">
+                                                  <input type="checkbox" name="Strength"/>
+                                                  <label for="">Strong</label>
+                                               </div>
+                                               <div class="tag">
+                                                 <input type="checkbox" name="Strength"/>
+                                                 <label for="">Very Strong</label>
+                                              </div>
+                                              
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="card-header" id="hive-score">
+                                    <button class="accordian-btn collapsed" data-toggle="collapse" data-target="#hive-scores" aria-expanded="false" aria-controls="hive-scores">
+                                      Total Hive Score:
+                                    </button>
+                                    <div id="hive-scores" class="collapse" aria-labelledby="hive-score" data-parent="#accordion-2">
+                                       <div class="card-body">
+                                          <div class="custom-flex-center multiple-selectbox">
+                                             <div class="mutiple-select-wrap">
+                                                <div class="mutiple-select-wrap-inner" id="queen-spotted">
+                                                 <input type="number" class="custom-input" placeholder="Total Hive Score ..">
+                                                </div>
+                                             </div>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-header" id="color-flag">
+                                    <button class="accordian-btn collapsed" data-toggle="collapse" data-target="#color-flags" aria-expanded="false" aria-controls="color-flags">
+                                      Color Flag:
+                                    </button>
+                                    <div id="color-flags" class="collapse" aria-labelledby="color-flag" data-parent="#accordion-2">
+                                       <div class="card-body">
+                                         <!-- Easy and useful color picker -->
+                                       <div class="color-wrapper">
+                                          <div class="color-wrapper-inner">
+                                          <input type="text" name="custom_color" placeholder="#FFFFFF" id="pickcolor" class="call-picker custom-input">
+                                          <div class="color-picker" id="color-picker" style="display: none"></div>
+                                          </div>
+                                          <div class="color-holder call-picker"></div>
+                                         
+                                       </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 </div>
+                                 
+                                 <div class="col-sm-12 p-0">
+                                    <label class="custom-input-label medium">Notes</label>
+                                    <div class="bg-grey">
+                                       <textarea class="custom-input" placeholder="Type" rows="4"></textarea>
+                                       <form>
+                                          <div class="file-upload-wrapper" data-text="file type jpeg, png, svg, .mov">
+                                             <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 
+                                 </div>
+                               
+                              
+                                 <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab">
+                                    
+                                   
+                                    <h4 class="text-left medium">Equipment Condition</h4>
+                                    <div class="custom-accordian" id="accordion-8">
+                                       <div class="card-header" id="lid">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#lid-spotted" aria-expanded="true" aria-controls="lid-spotted">
+                                           Lid:
+                                          </button>
+                                          <div id="lid-spotted" class="collapse " aria-labelledby="lid" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="inner-covers">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#inner-cover" aria-expanded="true" aria-controls="inner-cover">
+                                          Inner Cover:
+                                          </button>
+                                          <div id="inner-cover" class="collapse " aria-labelledby="inner-cover" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="Super">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#super" aria-expanded="true" aria-controls="super">
+                                          Super:
+                                          </button>
+                                          <div id="super" class="collapse " aria-labelledby="super" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="Super-frames">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#super-frames" aria-expanded="true" aria-controls="super-frames">
+                                          Super Frames:
+                                          </button>
+                                          <div id="super-frames" class="collapse " aria-labelledby="super-frames" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="broad-boxs">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#broad-box" aria-expanded="true" aria-controls="broad-box">
+                                          Broad Box:
+                                          </button>
+                                          <div id="broad-box" class="collapse " aria-labelledby="broad-box" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="broad-frames">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#borad-frames" aria-expanded="true" aria-controls="borad-frames">
+                                          Broad Frames:
+                                          </button>
+                                          <div id="borad-frames" class="collapse " aria-labelledby="borad-frames" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="excluders">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#excluder" aria-expanded="true" aria-controls="excluder">
+                                          Excluder:
+                                          </button>
+                                          <div id="excluder" class="collapse " aria-labelledby="excluder" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="bases">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#base" aria-expanded="true" aria-controls="base">
+                                          Base:
+                                          </button>
+                                          <div id="base" class="collapse " aria-labelledby="base" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="hive-stands">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#hive-stand" aria-expanded="true" aria-controls="hive-stand">
+                                          Hive Stand:
+                                          </button>
+                                          <div id="hive-stand" class="collapse " aria-labelledby="hive-stand" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                       <div class="card-header" id="others">
+                                          <button class="accordian-btn" data-toggle="collapse" data-target="#hive-others" aria-expanded="true" aria-controls="hive-others">
+                                          Others:
+                                          </button>
+                                          <div id="hive-others" class="collapse " aria-labelledby="hive-others" data-parent="#accordion-8">
+                                           <div class="card-body">
+                                             <div class="custom-flex-center">
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern" checked/>
+                                                   <label for="">Excellent Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Good Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Fair Condition</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Soon</label>
+                                                </div>
+                                                <div class="tag">
+                                                   <input type="checkbox" name="brood-pattern"/>
+                                                   <label for="">Replace Urgently</label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="bottom-center-bottons btn-end p-0 w-100">
+                              <a href="javascript:void(0)" class="btn-bg-blk"><span>Save</span></a>
+                              <a href="javascript:void(0)" class="btn-bg-blk"><span>Save +<i class="fa fa-calendar-alt pl-3"></i></span></a>
+                              <a href="javascript:void(0)" class="btn-bg-blk"><span>Cancel</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </section>
+      </div>
+      <div class="footer">
+         <div class="container">
+            <h4>© hivekeepers 2020 All Rights Reserved. | Privacy Policy | Terms of Use</h4>
+         </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+      <!-- bootstrap -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/apiary.js"></script>
+      
+     
+   </body>
+</html>

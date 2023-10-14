@@ -1,0 +1,324 @@
+.sidebar-nav{
+    position: fixed;
+    left: -356px;
+    top: 0;
+    height: 100%;
+    background-color: $black-color;
+    z-index: 100;
+    min-width: 356px;
+    width:0;
+    @include breakpoint(sm){
+        min-width: 265px;
+    }
+    @include breakpoint(mobile){
+        min-width: 200px;
+    }
+    @include breakpoint(xs){
+        min-width: 140px;
+    }
+    z-index: 1001;
+    @include custom-transition;
+    &.active{
+        left: 0;
+    }
+    .sidebar-nav-header{
+        padding: 40px 10px;
+        background: $brand-color;
+        text-align: center;
+        @include breakpoint(lp){
+            padding: 18px 10px;
+        }
+        @include breakpoint(lg){
+            padding: 18px 10px;
+        }
+        @include breakpoint(md){
+            padding: 18px 10px;
+        }
+        @include breakpoint(sm){
+            padding: 15px 10px;
+        }
+        img{
+            max-width: 220px;
+            @include breakpoint(lp){
+                max-width: 180px;
+            }
+            @include breakpoint(lg){
+                max-width: 160px;
+            }
+            @include breakpoint(md){
+                max-width: 140px;
+            }
+            @include breakpoint(sm){
+                max-width: 120px;
+            }
+            @include breakpoint(xs){
+                max-width: 80px;
+            }
+        }
+    }
+    .sidebar-links-ul{
+        margin: 20px 0;
+        max-height: calc(100vh - 128px);
+        overflow-y: scroll;
+        height: 100%;
+    li {
+      position: relative;
+      z-index: 1;
+     @include btn-hover-effect;
+     &::after{
+         border-radius: 0 !important;
+     }
+     a{
+         font-size: 24px;
+         font-weight: 300;
+         z-index: 10;
+         @include breakpoint(lp){
+            font-size: 18px;
+        }
+        @include breakpoint(lg){
+            font-size: 14px;
+        }
+        @include breakpoint(md){
+            font-size: 14px;
+        }
+         @include breakpoint(sm){
+             font-size: 12px;
+         }
+         @include breakpoint(mobile){
+            font-size: 12px;
+        }
+        @include breakpoint(xs){
+            font-size: 12px;
+        }
+        img{
+            @include breakpoint(lp){
+                max-width: 24px;
+            }
+            @include breakpoint(lg){
+                max-width: 20px;
+            }
+            @include breakpoint(md){
+                max-width: 20px;
+            }
+            @include breakpoint(sm){
+                max-width: 18px;
+            }
+            @include breakpoint(xs){
+                max-width: 16px;
+                margin-right: 5px;
+            }
+         }
+           &:hover{
+               &::before{
+                   content: none;
+               }
+           }
+     }
+     &.active{
+        &::before{
+            background-color: $brand-clr-rgba-light;
+            border-radius: 0;
+            width: 100%;
+        }
+        &::after{
+           background-color: $brand-clr-rgba-light;
+           border-radius: 0;
+           width: 100%;
+       }
+     }
+     .btn-collapse{
+         position: relative;
+         &::after{
+            content: "\f105";
+             position: absolute;
+             right: 0;
+             top: 25%;
+             transform: translate(-50%);
+             font-family: "FontAwesome"; 
+             font-weight: 900; 
+         }
+         &.active{
+            &::after{
+                content: "\f104";
+            }
+        }
+     }
+     &::before{
+        background-color: $brand-clr-rgba-light;
+        border-radius: 0;
+    }
+    &::after{
+       background-color: $brand-clr-rgba-light;
+       border-radius: 0;
+   }
+    }
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .second-sidebar{
+        position: fixed;
+        top: 0;
+        background-color: $color-white;
+        height: 100%;
+        left: 0;
+        min-width: 0;
+        width: 0;
+        left: -356px;
+        @include custom-transition;
+        z-index: 1;
+        &.active{
+            min-width: 356px;
+            left: 356px;
+            @include breakpoint(sm){
+                left: 265px;
+                min-width: 300px;
+            }
+            @include breakpoint(mobile){
+                left: 200px;
+                min-width: 200px;
+            }
+            @include breakpoint(xs){
+                left:140px;
+                min-width: 120px;
+            }
+        }
+        .sidebar-nav-header{
+            padding: 60px 10px;
+            @include breakpoint(lp){
+                padding: 32px 10px;
+            }
+            @include breakpoint(lg){
+                padding: 32px 10px;
+            }
+            @include breakpoint(md){
+                padding: 28px 10px;
+
+            }
+            @include breakpoint(sm){
+                padding: 20px 10px;
+            }
+            background-color: $color-white;
+            border-bottom: 1px solid $grey-clr;
+            margin: 0 20px;
+            h5{
+                color: $brand-color;
+                text-align: center;
+                font-weight: 500;
+                @include breakpoint(lg){
+                    font-size: 20px;
+                }
+                @include breakpoint(md){
+                    font-size: 20px;
+                }  
+                @include breakpoint(xs){
+                    font-size: 12px;
+                }
+            }
+        }
+        .second-sidebar-ul{
+            margin: 20px 0;
+            max-height: calc(100vh - 190px);
+            // overflow-y: scroll;
+            .popover__wrapper {
+                position: relative;
+                margin-top: 0;
+                display: block;
+                .popover__content {
+                  opacity: 0;
+                  visibility: hidden;
+                  position: absolute;
+                  left: 370px;
+                  transform: translate(0, 10px);
+                  background-color: $color-white;
+                  padding: 1.5rem;
+                  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+                  width: 100%;
+                  max-width: 400px;
+                max-height: 400px;
+                  top: -20px;
+                  img{
+                      max-width: 100px;
+                  }
+                  &:before {
+                    position: absolute;
+                    z-index: -1;
+                    content: "";
+                    left: -15px;
+                    top: 60px;                
+                    border-style: solid;
+                    border-width: 0 10px 10px 10px;
+                    border-color: transparent transparent $color-white transparent;
+                    transition-duration: 0.3s;
+                    transition-property: transform;
+                    transform: rotate(-90deg);
+                  }
+                  .popover__message {
+                    text-align: center;
+                  }
+                }
+                &:hover{
+                  .popover__content {
+                    z-index: 10;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translate(0, -20px);
+                    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+                  }
+                }
+              }
+        li {
+            position: relative;
+            z-index: 1;
+          
+           a{
+               font-size: 24px;
+               font-weight: 300;
+               z-index: 10;
+            @include breakpoint(lp){
+                font-size: 18px;
+            }
+            @include breakpoint(lg){
+                font-size: 14px;
+            }
+            @include breakpoint(md){
+                font-size: 14px;
+            }
+             @include breakpoint(sm){
+                 font-size: 12px;
+             }
+             @include breakpoint(mobile){
+                font-size: 12px;
+            }
+            @include breakpoint(xs){
+                font-size: 12px;
+            }
+               &:hover{
+                   &::before{
+                       content: none;
+                   }
+               }
+           }
+             
+             .dropdown-ul{
+                 background: $color-white;
+                 display: none;
+                 &.show{
+                     display: block;
+                 }
+                 li{
+                     a{
+                        padding-left: 40px !important;
+                        @include breakpoint(xs){
+                            padding-left: 20px !important;   
+                        }
+                     }
+                 }
+             }
+          }
+          &::-webkit-scrollbar {
+              display: none;
+            }
+        }
+    }
+}

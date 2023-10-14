@@ -1,0 +1,42 @@
+.membership-wrapper{
+    .logo-img{
+        margin: 40px 0;
+    }
+    .membership-wrapper-inner{
+        background-color: $color-white;
+        border-radius: 5px;
+        padding: 50px;
+        @include breakpoint(laptop){
+            padding: 20px;
+        }
+        position: relative;
+        text-align: center;
+        .btn-yellow-link{
+            margin: 0;
+        }
+        .subscription-list{
+            margin: 20px 0;
+            li{
+                margin: 10px 0;
+                a{
+                    display: block;
+                }
+            }
+        }
+        .purchase-btn{
+            width: 100%;
+        }
+    }
+}
+.membership-p{
+    h5{
+        max-width: 350px;
+        margin: 20px auto;
+        font-weight: 400;
+        text-align: center;
+        a{
+            margin: 0;
+            display: inline-block;
+        }
+    }
+}

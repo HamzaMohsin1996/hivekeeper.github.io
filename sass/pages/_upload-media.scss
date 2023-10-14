@@ -1,0 +1,54 @@
+.video-recorder-wraper{
+    margin: 30px 0;
+    border: 1px solid $grey-clr;
+    .video-wrapper{
+        width: 100%;
+        height: 830px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      
+        @include breakpoint(lg){
+            height: 400px;
+        }
+        @include breakpoint(md){
+            height: 300px;
+        }
+        @include breakpoint(sm){
+            height: 250px;
+        }
+        @include breakpoint(xs){
+            height: 200px;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .recording-text{
+        font-size: 20px;
+        color: $black-color;
+        font-weight: 600;
+    }
+    .recording-btn-wrap{
+        
+    @include flex-vertical-center;
+    flex-direction: column;
+    padding: 30px 0;
+
+        .recording-btn{
+            width: 63px;
+            height: 63px;
+            border-radius: 50%;
+            border:1px solid $red-clr;
+            @include flex-vertical-center;
+            margin-bottom: 10px;
+             span{
+                width: 40px;
+                height: 40px;
+                background: $red-clr;
+                border-radius: 50%;
+            }
+        }
+    }
+}

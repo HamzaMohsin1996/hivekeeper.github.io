@@ -1,0 +1,62 @@
+.observation{
+    @include breakpoint(sm){
+      padding: 0;
+    }
+    .col-sm-6{
+        @include breakpoint(sm){
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    .bottom-center-bottons {
+      a{
+        margin-bottom: 0;
+      }
+      
+    }
+  }
+	.color-wrapper{
+        @include flex-center;
+        align-items: flex-start;
+        input.call-picker {
+           max-width: 200px;
+        }
+    
+        .color-picker {
+            width: 100%;
+            max-width: 200px;
+            background: $color-white;
+            padding: 10px;
+            border: 1px solid transparent;
+             @include outline-shadow;
+           @include flex-center;
+           flex-wrap: wrap;
+        }
+    
+        .color-holder {
+              background: $color-white;
+              border: 1px solid $dark-grey !important;
+            cursor: pointer;
+            border:1px solid transparent;
+            padding: 15px;
+            max-width: 40px;
+            margin-left: 5px;
+        }
+        .color-item {
+            cursor: pointer;
+           max-width:25%;
+           width: 100%;
+           height: 40px;
+            list-style-type: none;
+            margin: 0;
+            border: 1px solid #DDD;
+            
+            &:hover {
+                border: 1px solid #666;
+                opacity: 0.8;
+                -moz-opacity: 0.8;
+                filter:alpha(opacity=8);
+            }
+        }
+    }
+  

@@ -1,0 +1,13 @@
+.counter-inputs-wrap{
+    @include flex-vertical-center;
+    width: 100%;
+    .counter-inputs{
+        max-width: 50%;
+        width: 100%;
+    }
+    h6{
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,112 @@
+.login-signup-wrap{
+    min-height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    @include flex-center;
+    justify-content: center;
+    .logo-img{
+        img{
+            max-width: 310px;
+            @include breakpoint(laptop){
+                max-width: 250px;
+            }
+        }
+        .desktop-img{
+            @include breakpoint(md){
+                display: none;
+            }
+            @include breakpoint(sm){
+                display: none;
+            }
+        }
+        .mobile-img{
+            display: none;
+            margin: 15px  auto;
+            @include breakpoint(md){
+                display: block;
+            }
+            @include breakpoint(sm){
+                display: block;
+            }
+        }
+    }
+    .login-signup-wrap-inner{
+        background-color: $color-white;
+        border-radius: 5px;
+        padding: 30px;
+        @include breakpoint(lp){
+            padding: 15px 30px;
+        }
+        position: relative;
+        h2{
+            font-weight: 600;
+            color: $dark-grey;
+            margin-bottom: 1rem;
+            @include breakpoint(lp){
+                font-size: 28px;
+                margin-bottom: 0.5rem;
+            }
+        }
+        h5{
+            margin-bottom: 2rem;
+            color: $dark-grey;  
+            font-weight: 300;
+            @include breakpoint(lp){
+                margin-bottom: 1rem;
+            }
+
+            @include breakpoint(lg){
+                font-size: 22px;
+                margin-bottom: 1rem;
+            }
+            @include breakpoint(md){
+                font-size: 20px;
+            }
+            @include breakpoint(sm){
+                font-size: 18px;
+                margin-bottom: 1rem;
+            }
+            a{
+                margin:0;
+                padding-top: 0;
+                font-size: 24px;
+                display: inline-block;
+                font-weight: 300;
+                @include breakpoint(lg){
+                    font-size: 22px;
+                }
+                @include breakpoint(md){
+                    font-size: 20px;
+                }
+                @include breakpoint(sm){
+                    font-size: 18px;
+                }
+            }
+        }
+        .custom-input{
+            margin-bottom: 1rem;
+        }
+        .social-media-btns{
+            margin: 30px 0 0;
+            @include breakpoint(lp){
+                margin: 10px 0 0;  
+            }
+            h5{
+                font-weight: 600;
+                color: $black-color;
+            }
+            .social-media-btns-wrap{
+                @include flex-center;
+                justify-content: space-around;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    }
+    &::before{
+        content: '';
+        @include top-bottom-layer;
+        background-color: $blk-clr-rgba;
+    }
+}

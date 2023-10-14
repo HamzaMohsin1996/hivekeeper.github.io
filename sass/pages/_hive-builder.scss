@@ -1,0 +1,192 @@
+.hive-builder{
+    position: relative;
+    padding: 0;
+   
+    .custom-flex{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+        @include breakpoint(mobile){
+            justify-content: center;
+        }
+        @include breakpoint(xs){
+            justify-content: center;
+        }
+        & > div{
+            margin-left: 20px;
+        }
+        &:nth-child(1){
+            margin-left: 0;
+        }
+        & > img{
+            margin-left: 20px;
+        }
+        .input-wrap{
+            input{
+                @include breakpoint(laptop){
+                    padding: 5px 10px !important;
+                }
+                
+            }
+        }
+    }
+ 
+    .counter-inputs{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        h3{
+            text-align: left !important;
+            margin: 0 0 0.5rem;
+            @include breakpoint(laptop){
+                font-size: 14px;
+            }
+            @include breakpoint(xs){
+                font-size: 10px;
+            }
+        }
+        .number{
+            span{
+                height: 25px;
+                padding: 3px;
+                font-size: 12px;
+                
+            }
+            input{
+                height: 25px;
+                padding: 3px;
+                font-size: 12px;
+                 
+            }
+        }
+    }
+    .honey-box-wrapper{
+        max-width: 270px;
+    margin: 0px auto 0;
+    min-height: 325px;   
+        position: relative;
+        @include breakpoint(mobile){
+            max-width: 220px;
+            min-height: 260px;
+            margin: 30px auto;
+        }
+        .cover-box{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            img{
+                width: 100%;
+            }
+            
+        }
+        position: relative;
+        .complete-box-wrap-top{
+            .btn-red-close{
+                width: 20px;
+                height:20px;
+                i{
+                    font-size: 12px;
+                }
+            }
+            .custom-label{
+                width: 20px;
+                height:20px;
+                font-size: 12px;
+                
+            }
+            .cover-box-2{
+                &.active{
+                    display: none;
+                }
+                .btn-red-close{
+                    position: absolute;
+                    top: 210px;
+                    right: 60px;
+                    @include breakpoint(mobile){
+                        top: 170px;
+                        right: 50px;
+                    }
+                    z-index: 10;
+                }
+                .custom-label{
+                    position: absolute;
+                    top: 197px;
+                    left: 27px;
+                    @include breakpoint(mobile){
+                        top: 157px;
+                        left: 23px;
+                    }
+                    z-index: 10;
+                }
+            }
+            .cover-box-3{
+                &.active{
+                    display: none;
+                }
+                .btn-red-close{
+                    position: absolute;
+                    top: 150px;
+                    right: 40px;
+                    z-index: 10;
+                }
+            }
+            .cover-box-4{
+                &.active{
+                    display: none;
+                }
+                .btn-red-close{
+                    position: absolute;
+                    top: 145px;
+                    right: 56px;  
+                    @include breakpoint(mobile){
+                        top: 118px;
+                        right: 46px;
+                    }              
+                    z-index: 10;
+                }
+                .custom-label{
+                    position: absolute;
+                    top: 130px;
+                    left: 18px;
+                    z-index: 10;
+                    @include breakpoint(mobile){
+                        top: 100px
+                    }
+                }
+            }
+            
+        }
+       
+        
+    }
+    .bottom-center-bottons{
+        padding: 10px 0 0;
+        a{
+            @include breakpoint(laptop){ 
+            font-size: 16px;
+            padding: 8px 12px;
+                min-width: 100px;
+            }
+            @include breakpoint(sm){ 
+                font-size: 16px;
+                padding: 8px 12px;
+                    min-width: 100px;
+                    width: auto;
+                }
+                @include breakpoint(xs){ 
+                    font-size: 12px;
+                    
+                    }
+        }
+    }
+    .btn-back {
+        position: absolute;
+        top:10px;
+        @include breakpoint(laptop){
+            top:18px;
+        }
+        left: 0;
+    }
+}

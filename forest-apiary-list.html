@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no  shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700s;800;900&display=swap" rel="stylesheet">
+  <title>Hive Keeper</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./style-en.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="sidebar-btn"><i class="fa fa-2x fa-bars"></i></button>
+        </div>
+        <div class="header-center">
+          <img src="./images/clr-logo.png" alt="" />
+        </div>
+        <div class="header-right">
+          <div class="dropdown custom-dropdown">
+            <button type="button" class="map-pin-btn btn-common dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-compass "></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-camera"></i>Camera</a>
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-video-camera"></i>Video</a>
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-microphone"></i>Mic</a>
+            </div>
+          </div>
+          <div class="dropdown custom-dropdown">
+            <button type="button" class="custom-blk-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </button>
+            <div class="dropdown-menu">
+              <div class="profile-img border-bottom">
+                <img src="./images/profile.png" alt=""/>
+                <h6>John Doe</h6>
+              </div>
+              <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>My Profile</a>
+              <a class="dropdown-item " href="user-saccess.html"><i class="fa fa-share-alt "></i>Shared Apiaries</a>
+              <a class="dropdown-item" href="membership.html"><i class="fa fa-id-card"-alt"></i>Membership </a>
+              <a class="dropdown-item border-bottom " href="Settings.html"><i class="fa fa-cog"></i>Settings </a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </header>
+  <div class="sidebar-nav">
+    <div class="sidebar-nav-header">
+      <img src="./images/sidebar-logo.png" alt="" />
+    </div>
+    <ul class="sidebar-links-ul">
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/apiary.png" alt="" /><span>My Bees</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>My Bees</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="home.html" class="custom-underline-link ">Map</a>
+            
+            </li>
+            <li>
+              <a href="forest-apiary-list.html" class="custom-underline-link">My Apiaries</a>
+            </li>
+            <li>
+              <a href="timeline.html" class="custom-underline-link">My Timeline</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="custom-underline-link">My Gallery</a>
+            </li>
+          
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/observations.png" alt="" /><span>Reports</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Reports</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="ApiaryReporting.html" class="custom-underline-link ">Apiary and Hive Reporting</a>
+            
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Queen Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Harvest Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Forage Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Other Reporting</a>
+            </li>
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="observation.html" class="custom-underline-link"><img src="./images/action.png" alt="" /><span>Observation</span></a>
+      </li>
+      <li >
+        <a href="action.html" class="custom-underline-link"><img src="./images/inspection.png" alt="" /><span>Action</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/user.png" alt="" /><span>Inspection</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Inspection</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="full-hive-inspection.html" class="custom-underline-link ">Full Hive Inspection</a>
+            
+            </li>
+            <li>
+              <a href="standard-hive.html" class="custom-underline-link">Standard Hive Inspection</a>
+            </li>
+            <li>
+              <a href="apiaryInspection.html" class="custom-underline-link">Apiary Inspection</a>
+            </li>
+            <li>
+              <a href="external-hive-inspection.html" class="custom-underline-link">External Hive Inspection</a>
+            </li>
+            <li>
+              <a href="varroa-check.html" class="custom-underline-link">Varroa Check</a>
+            </li>
+            <li>
+              <a href="dead-hive-inspection.html" class="custom-underline-link">Dead Hive Inspection</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Healthy Colony Checklist</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">First Spring Inspection</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Winter Pack Down Inspection</a>
+            </li>
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link"><img src="./images/membership.png" alt="" /><span>Hive School</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/settings.png" alt="" /><span>Calendar and Timeline</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Calender And Timeline</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link ">Timeline</a>
+            
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Calendar</a>
+            </li>
+            
+          </ul>
+          </div>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="main-wrapper">
+    <section class="my-apiary active"> 
+      <div class="my-apiary-list-wrapper">
+         <div class="search-box-wrapper">
+          <input type="text" placeholder="Search by Location" name="search2">
+          <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+         </div>
+         <div class="my-apiaries-list-inner">
+          <div class="my-apiary-content active">
+            <div class="my-apiary-content-left">
+            <h4>John Doe</h4>
+            <h6>Apiary Name</h6>
+            <h6>345 J Wapda Town, 
+              Lahore</h6>
+            <h6>3 Hives</h6>
+            <h6>May 12, 2020</h6>
+            </div>
+            <div class="my-apiary-content-right">
+              <img src="./images/my-apiary.png" alt="" />
+            </div>
+          </div>
+          <div class="my-apiary-content">
+            <div class="my-apiary-content-left">
+            <h4>John Doe</h4>
+            <h6>Apiary Name</h6>
+            <h6>345 J Wapda Town, 
+              Lahore</h6>
+            <h6>3 Hives</h6>
+            <h6>May 12, 2020</h6>
+            </div>
+            <div class="my-apiary-content-right">
+              <img src="./images/my-apiary.png" alt="" />
+            </div>
+          </div>
+          <div class="my-apiary-content">
+            <div class="my-apiary-content-left">
+            <h4>John Doe</h4>
+            <h6>Apiary Name</h6>
+            <h6>345 J Wapda Town, 
+              Lahore</h6>
+            <h6>3 Hives</h6>
+            <h6>May 12, 2020</h6>
+            </div>
+            <div class="my-apiary-content-right">
+              <img src="./images/my-apiary.png" alt="" />
+            </div>
+          </div>
+          <div class="my-apiary-content">
+            <div class="my-apiary-content-left">
+            <h4>John Doe</h4>
+            <h6>Apiary Name</h6>
+            <h6>345 J Wapda Town, 
+              Lahore</h6>
+            <h6>3 Hives</h6>
+            <h6>May 12, 2020</h6>
+            </div>
+            <div class="my-apiary-content-right">
+              <img src="./images/my-apiary.png" alt="" />
+            </div>
+          </div>
+         </div>
+         <div class="collapse-btn">
+           <a href="javascript:void(0)" class="custom-yellow-link sidebar-collapse"><i class="fa fa-arrow-left"></i>
+           </a>
+         </div>
+      </div>
+    <div class="container-fluid">
+      <div class="main-wrapper-inner">
+        <h4 class="underline-yellow">My Apiary</h4>
+        <div class="apiary-wrap">
+          <div class="apiary-list-main">
+            <div class="row align-items-end apiary-list-main-row row-eq-height">
+              <div class="col-sm-4">
+                <div class="apiary-list-main-inner-1 apiary-list-col">
+                  <div class="apiary-list-main-inner-select">
+                  <div class="apiary-list-main-lid-grey"> 
+                 </div>
+                 <div class="apiary-list-main-lid-cap">
+                 </div> 
+                 <div class="apiary-list-main-content-div">
+                   <img src="./images/round-img.png" alt="" />
+                   <h2>HONEY1</h2>
+                 </div> 
+                 </div>  
+                 
+               </div>
+               <div class="apiary-list-main-lid-bottom">
+                 </div> 
+            </div>
+            <div class="col-sm-4">
+             <div class="apiary-list-main-inner-2 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+                </div>
+                <div class="apiary-list-main-lid-cap">
+                </div> 
+                <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                  <h2>HONEY 2</h2>
+                </div> 
+                </div> 
+               <div class="apiary-list-main-inner-select">
+               <div class="apiary-list-main-lid-grey"> 
+              </div>
+              <div class="apiary-list-main-lid-cap">
+              </div> 
+              <div class="apiary-list-main-content-div">
+               <img src="./images/round-img.png" alt="" />
+                <h2>HONEY 3</h2>
+              </div> 
+              </div>  
+              
+            </div>
+            <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-3 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 4</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-4 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 5</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-5 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 6</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-6 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 7</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-7 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 8</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-8 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 9</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-9 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 10</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+          
+           <div class="col-sm-4">
+             <div class="apiary-list-main-inner-10 apiary-list-col">
+               <div class="apiary-list-main-inner-select">
+                 <div class="apiary-list-main-lid-grey"> 
+               </div>
+               <div class="apiary-list-main-lid-cap">
+               </div> 
+               <div class="apiary-list-main-content-div">
+                 <img src="./images/round-img.png" alt="" />
+                 <h2>HONEY 11</h2>
+               </div> 
+               </div>
+           </div>
+           <div class="apiary-list-main-lid-bottom">
+           </div> 
+           </div>
+         </div>
+         </div>
+         <div class="arrows-btn-wrap">
+           <a href="javascript:void(0)" class="arrow-left arrows-btn-inner"><i class="fa fa-angle-left"></i></a>
+           <a href="javascript:void(0)" class="arrow-right arrows-btn-inner"><i class="fa fa-angle-right"></i></a>
+         </div>
+         <div class="add-apiary-wrap">
+           <div class="add-apiary-wrap-inner">
+             <a href="javascript:void(0)" class="custom-yellow-link zoom-in"><i class="fa fa-search-plus"></i></a>
+             <a href="javascript:void(0)" class="custom-yellow-link zoom-out"><i class="fa fa-search-minus"></i></a>
+             <a href="javascript:void(0)" class="custom-yellow-link"><i class="fa fa-plus"></i></a>
+             <a href="javascript:void(0)" class="custom-yellow-link list-btn"><i class="fa fa-ellipsis-v"></i></a>
+             <div class="add-apiary-wrap-container">
+               <a href="javascript:void(0)" class="item-link"><i class="fa fa-info-circle"></i>
+                 Hive Information
+               </a> 
+               <a href="javascript:void(0)" class="item-link" data-toggle="modal"  data-target="#queen-info-modal"><i class="fa fa-chess-queen"></i>
+                 Queen Information
+               </a> 
+               <a href="javascript:void(0)" class="item-link" data-toggle="modal"  data-target="#relocate-modal"><i class="fa fa-arrows-alt"></i>
+                 Relocate Hive location
+               </a> 
+               <a href="javascript:void(0)" class="item-link"><i class="far fa-images"></i>
+                 View Hive Images
+               </a> 
+               <a href="javascript:void(0)" class="item-link"><i class="fa fa-vr-cardboard"></i>
+                 Duplicate Hive
+               </a> 
+               <a href="javascript:void(0)" class="item-link"><i class="fa fa-trash"></i>
+                 Delete Hive
+               </a> 
+             </div>    
+           </div>
+         </div>
+       </div>
+       <div class="round-img">
+      </div>
+        <div class="bottom-btn center-btns">
+          <a href="javascript:void(0)" class="btn-bg-blk m-0">Apply Info</a>
+        </div>
+        </div>
+    </div>
+    
+ 
+ 
+  
+  </section>
+  </div>
+  <div class="footer">
+    <div class="container">
+    <h4>© hivekeepers 2020 All Rights Reserved. | Privacy Policy | Terms of Use</h4>
+    </div>
+  </div>
+ <!-- Queen Information Modal Html Start -->
+ <div class="modal fade custom-modal" id="queen-info-modal" tabindex="-1" role="dialog" aria-label="followers-modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+     <div class="modal-content">
+        <div class="modal-header border-bottom">
+              <h6>Queen Information</h6>
+           <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+           <i class="fa fa-times"></i>
+           </button>
+        </div>
+        <div class="modal-body">
+           <div class="adding-info-modal">
+             <div class="row">
+               <div class="col-md-6 col-sm-12 py-2">
+                 <input type="text" class="custom-input" placeholder="Queen Name" />
+               </div>
+               <div class="col-md-6 col-sm-12 py-2">
+                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                  <input class="custom-input dateclass placeholderclass" type="text" readonly  placeholder="Date" onClick="$(this).removeClass('placeholderclass')"/>
+                  <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i>
+                  </span>
+              </div>
+              </div>
+              <div class="col-md-6 col-sm-12 py-2">
+                <input type="text" class="custom-input" placeholder="Marking Colour" />
+              </div>
+              <div class="col-md-6 col-sm-12 py-2">
+                <input type="text" class="custom-input" placeholder="Queen traits" />
+              </div>
+              <div class="col-sm-12 py-2">
+                <label class="custom-input-label medium">Notes</label>
+                <textarea class="custom-input" placeholder="Type" rows="4"></textarea>
+              </div>
+              <div class="col-sm-12 py-2">
+                <label class="custom-input-label">Queen traits: </label>
+                <!-- Upload  -->
+                <div class="custom-input-multiple-wrap">
+                  <div class="custom-flex custom-input-multiple ">
+                    <input id="upload-3" type="file" onchange="readURL(this ,3);" class="input-upload">
+                    <div class="input-group-append">
+                      <label for="upload-3" class="btn btn-light m-0 rounded-pill px-4 "> <img src="./images/add-image.png"></label>
+                  </div>
+                    <label id="upload-label-3" for="upload-2" class="drag-upload-img">Upload Photo</label>
+                    
+                </div>
+                <!-- Uploaded image area-->
+                <div class="image-area">
+                  <img id="imageResult-3" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block">
+                </div>
+                </div>
+              </div>
+             </div>
+             <div class="modal-bottom-footer">
+              <a href="javascript:void(0)" class="btn-bg-blk">Save</a>
+             </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<!--Queen Information Modal Html end -->
+ <!-- Relocate Hive modal Start -->
+ <div class="modal fade custom-modal" id="relocate-modal" tabindex="-1" role="dialog" aria-label="Relocate-modal" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+     <div class="modal-content">
+        <div class="modal-header border-bottom pt-0">
+              <h6>Relocate Hive location</h6>
+           <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+           <i class="fa fa-times"></i>
+           </button>
+        </div>
+        <div class="modal-body">
+          <div class="add-inventory">
+            <div class="table-responsive">   
+              <table class="table custom-table custom-table-blk">
+                <thead>
+                  <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="custom-radio-btn"> 
+                        <input id="radio-1" class="radio-custom" name="radio-group" type="radio" >
+                        <label for="radio-1" class="radio-custom-label"></label>
+                    </div>
+                    </td>
+                    <td>
+                     
+                    My Apiary
+                    </td>
+                    <td>345 J Wapda Town, Lahore</td>
+                   
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-radio-btn">
+                        <input id="radio-2" class="radio-custom" name="radio-group" type="radio" >
+                        <label for="radio-2" class="radio-custom-label"></label>
+                    </div>
+                    </td>
+                    <td>
+                     
+                      My Apiary
+                      </td>
+                      <td>345 J Wapda Town, Lahore</td>
+          
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-radio-btn"> 
+                        <input id="radio-3" class="radio-custom" name="radio-group" type="radio" >
+                        <label for="radio-3" class="radio-custom-label"></label>
+                    </div>
+                    </td>
+                    <td>My Apiary</td>
+                    <td>345 J Wapda Town, Lahore</td>
+                   
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            
+          </div>
+          <div class="modal-bottom-footer">
+            <a href="javascript:void(0)" class="btn-bg-blk">Save</a>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<!-- Relocate Hive modal end -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/apiary.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no  shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700s;800;900&display=swap" rel="stylesheet">
+  <title>Profile</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./style-en.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="sidebar-btn"><i class="fa fa-2x fa-bars"></i></button>
+        </div>
+        <div class="header-center">
+          <img src="./images/clr-logo.png" alt="" />
+        </div>
+        <div class="header-right">
+          <div class="dropdown custom-dropdown">
+            <button type="button" class="map-pin-btn btn-common dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-compass "></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-camera"></i>Camera</a>
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-video-camera"></i>Video</a>
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-microphone"></i>Mic</a>
+            </div>
+          </div>
+          <div class="dropdown custom-dropdown">
+            <button type="button" class="custom-blk-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </button>
+            <div class="dropdown-menu">
+              <div class="profile-img border-bottom">
+                <img src="./images/profile.png" alt=""/>
+                <h6>John Doe</h6>
+              </div>
+              <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>My Profile</a>
+              <a class="dropdown-item " href="user-access.html"><i class="fa fa-share-alt "></i>Shared Apiaries</a>
+              <a class="dropdown-item" href="membership.html"><i class="fa fa-id-card"-alt"></i>Membership </a>
+              <a class="dropdown-item border-bottom " href="Settings.html"><i class="fa fa-cog"></i>Settings</a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </header>
+  <div class="sidebar-nav">
+    <div class="sidebar-nav-header">
+      <img src="./images/sidebar-logo.png" alt="" />
+    </div>
+    <ul class="sidebar-links-ul">
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/apiary.png" alt="" /><span>My Bees</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>My Bees</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="home.html" class="custom-underline-link ">Map</a>
+            
+            </li>
+            <li>
+              <a href="forest-apiary-list.html" class="custom-underline-link">My Apiaries</a>
+            </li>
+            <li>
+              <a href="timeline.html" class="custom-underline-link">My Timeline</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="custom-underline-link">My Gallery</a>
+            </li>
+          
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/observations.png" alt="" /><span>Reports</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Reports</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="ApiaryReporting.html" class="custom-underline-link ">Apiary and Hive Reporting</a>
+            
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Queen Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Harvest Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Forage Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Other Reporting</a>
+            </li>
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="observation.html" class="custom-underline-link"><img src="./images/action.png" alt="" /><span>Observation</span></a>
+      </li>
+      <li >
+        <a href="action.html" class="custom-underline-link"><img src="./images/inspection.png" alt="" /><span>Action</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/user.png" alt="" /><span>Inspection</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Inspection</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="full-hive-inspection.html" class="custom-underline-link ">Full Hive Inspection</a>
+            
+            </li>
+            <li>
+              <a href="standard-hive.html" class="custom-underline-link">Standard Hive Inspection</a>
+            </li>
+            <li>
+              <a href="apiaryInspection.html" class="custom-underline-link">Apiary Inspection</a>
+            </li>
+            <li>
+              <a href="external-hive-inspection.html" class="custom-underline-link">External Hive Inspection</a>
+            </li>
+            <li>
+              <a href="varroa-check.html" class="custom-underline-link">Varroa Check</a>
+            </li>
+            <li>
+              <a href="dead-hive-inspection.html" class="custom-underline-link">Dead Hive Inspection</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Healthy Colony Checklist</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">First Spring Inspection</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Winter Pack Down Inspection</a>
+            </li>
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link"><img src="./images/membership.png" alt="" /><span>Hive School</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/settings.png" alt="" /><span>Calendar and Timeline</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Calender And Timeline</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link ">Timeline</a>
+            
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Calendar</a>
+            </li>
+            
+          </ul>
+          </div>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="main-wrapper">
+  
+  <div class="container">
+    <div class="main-wrapper-inner">
+        <section class="my-profile">
+        <h4 class="underline-yellow">My Profile</h4>
+        <div class="custom-tabs">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="personel-tab" data-toggle="tab" href="#personel" role="tab" aria-controls="personel" aria-selected="true">Personal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="beekeeping-tab" data-toggle="tab" href="#beekeeping" role="tab" aria-controls="beekeeping" aria-selected="false">Beekeeping</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="community-tab" data-toggle="tab" href="#community" role="tab" aria-controls="community" aria-selected="false">Community</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="profile-tab-content">
+                <div class="tab-pane fade show active" id="personel" role="tabpanel" aria-labelledby="personel-tab">
+                    <div class="user-profile-img">
+                        <div class="custom-input-multiple-wrap ">
+                            <div class="custom-flex custom-input-multiple ">
+                              <input id="upload-3" type="file" onchange="readURL(this ,1);" class="input-upload">
+                              <span class="input-btn"><i class="fa fa-pencil"></i></span>
+                              <div class="input-group-append">
+                                <label for="upload-1" class="btn btn-light m-0 rounded-pill px-4 "> <i class="fa fa-user"></i></label>
+                            </div>
+                              
+                              
+                          </div>
+                          <!-- Uploaded image area-->
+                          <div class="image-area">
+                            <img id="imageResult-1" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block">
+                          </div>
+                          </div>
+                    </div>
+                    <div class="row custom-padding-row">
+                      <div class="col-md-6 py-2">
+                        <input type="text" class="custom-input" placeholder="First Name">
+                      </div>
+                      <div class="col-md-6 py-2">
+                        <input type="text" class="custom-input" placeholder="Last Name">
+                      </div>
+                      <div class="col-md-12 py-2">
+                        <input type="email" class="custom-input" placeholder="Email">
+                      </div>
+                      <div class="col-md-6 py-2">
+                        <input type="password" class="custom-input" placeholder="Password">
+                      </div>
+                      <div class="col-md-6 py-2">
+                        <input type="number" class="custom-input" placeholder="Phone Number">
+                      </div>
+                      <div class="col-12 bottom-btn">
+                        <a href="javascript:void(0)" class="btn-bg-blk">Update</a>
+                        <a href="javascript:void(0)" class="btn-bg-blk">Close</a>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="tab-pane fade" id="beekeeping" role="tabpanel" aria-labelledby="beekeeping-tab">
+                  <h4 class="medium">Experience Level</h4>
+                  <div class="custom-flex-center-between select-date">
+                    <label class="custom-input-label">From</label>
+                    <select id="category" class="custom-selectbox mb-0 yellow-select" name="user_state">
+                     <option value="" disabled="disabled" selected="selected">January, 2020</option>
+                       <option value="cat 1">Apiary Name 1</option>
+                       <option value="cat 2">Apiary Name 2</option>
+                       <option value="cat 3">Apiary Name 3</option>
+                   </select>
+                   </div>
+                   <div class="hives-list">
+                     <div>
+                     <div class="hives-list-inner">
+                       <div class="hive-list-img-wrap">
+                       <img src="./images/slider-img.png" alt="" />
+                       </div>
+                       <h6 class="semibold">6-20 hives</h6>
+                      </div>
+                      </div>
+                      <div>
+                        <div class="hives-list-inner">
+                          <div class="hive-list-img-wrap">
+                          <img src="./images/slider-img.png" alt="" />
+                          </div>
+                          <h6 class="semibold">6-20 hives</h6>
+                         </div>
+                         </div>
+                         <div>
+                          <div class="hives-list-inner">
+                            <div class="hive-list-img-wrap">
+                            <img src="./images/slider-img.png" alt="" />
+                            </div>
+                            <h6 class="semibold">6-20 hives</h6>
+                           </div>
+                           </div>
+                           <div>
+                            <div class="hives-list-inner">
+                              <div class="hive-list-img-wrap">
+                              <img src="./images/slider-img.png" alt="" />
+                              </div>
+                              <h6 class="semibold">6-20 hives</h6>
+                             </div>
+                             </div>
+                             <div>
+                              <div class="hives-list-inner">
+                                <div class="hive-list-img-wrap">
+                                <img src="./images/slider-img.png" alt="" />
+                                </div>
+                                <h6 class="semibold">6-20 hives</h6>
+                               </div>
+                               </div>
+                               <div>
+                                <div class="hives-list-inner">
+                                  <div class="hive-list-img-wrap">
+                                  <img src="./images/slider-img.png" alt="" />
+                                  </div>
+                                  <h6 class="semibold">6-20 hives</h6>
+                                 </div>
+                                 </div>
+                                 
+                    </div>
+                    <div class="bottom-btn">
+                      <a href="javascript:void(0)" class="btn-bg-blk">Update</a>
+                      <a href="javascript:void(0)" class="btn-bg-blk">Close</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">
+                  <div class="row custom-padding-row">
+                    <div class="col-md-6 py-2">
+                      <input type="text" class="custom-input" placeholder="BeeKeeping club">
+                    </div>
+                    <div class="col-md-6 py-2">
+                      <input type="text" class="custom-input" placeholder="Mentor Name">
+                    </div>
+                    <div class="col-md-12 py-2">
+                      <input type="email" class="custom-input" placeholder="Mentor Email">
+                    </div>
+                    <div class="col-md-12 py-2">
+                      <input type="text" class="custom-input" placeholder="Preferred Beekeeping supplier">
+                    </div>
+                   
+                    <div class="col-12 bottom-btn">
+                      <a href="javascript:void(0)" class="btn-bg-blk">Update</a>
+                      <a href="javascript:void(0)" class="btn-bg-blk">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </section>
+    </div>
+  </div>
+  
+  </div>
+  <div class="footer">
+    <div class="container">
+    <h4>© hivekeepers 2020 All Rights Reserved. | Privacy Policy | Terms of Use</h4>
+    </div>
+  </div>
+   
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="js/apiary.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

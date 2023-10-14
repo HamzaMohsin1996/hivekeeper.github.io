@@ -1,0 +1,61 @@
+// colors
+$brand-color:#FFB309;
+$secondary-brand-clr:#e6a30d;
+$black-color: #000; // black color
+$color-white: #fff; // white color
+$grey-clr:#C7C6C4;
+$blk-clr-rgba:rgba(0,0,0,0.5);
+$brand-clr-rgba-light:rgba(#FFB309 , 0.3);
+$green-clr:#17CB2F;
+$grey-clr-light:#F5F5F5;
+$red-clr:#B80000;
+$red-light-clr:#D10808;
+$dark-grey:#707070;
+$blue-clr:#2C6DC2;
+
+// Transition
+$common-trans: .3s ease;
+
+
+
+/* clearfix */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* center block */
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* center vertically */
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include prefix(transform, translate(-50%, -50%), "webkit" "ms");
+}
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+
+
+

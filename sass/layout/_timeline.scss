@@ -1,0 +1,125 @@
+.ps-timeline-sec{
+    .custom-flex-center-between{
+        @include breakpoint(lg){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include breakpoint(md){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include breakpoint(sm){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        label{
+            @include breakpoint(lg){
+            margin: 0.5rem 0;
+            }
+            @include breakpoint(md){
+                margin: 0.5rem 0;
+                }
+                @include breakpoint(sm){
+                    margin: 0.5rem 0;
+                    }
+        }
+        select{
+            font-size: 20px;
+        }
+    }
+    .timeline-wrapper{
+       
+        .timeline-wrapper-inner-content{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 30px;
+                height:30px;
+                border: 3px solid $brand-color;
+                border-radius: 50%;
+                left: 50%;
+                transform:translateX(-50%);
+                bottom: -15px;
+                background-color: $color-white;
+            }
+        }
+        .timeline-wrapper-inner{
+           
+            .slick-slide{
+                  border-bottom: 1px solid $brand-color;
+                  margin: 130px 0;
+                  &:nth-child(even){
+                      .img-handler{
+                          position: relative;
+                          bottom: -130px !important;
+                          &::after{
+                              bottom: unset;
+                              top: -18px;
+                              transform: rotate(180deg);
+                          }
+                      }
+                      .ps-top{
+                          position: relative;
+                          bottom: 60px !important;
+                      }
+                  }
+                  @include flex-vertical-center;
+                  .timeline-wrapper-inner-content{
+                      position: relative;
+                      .img-handler{
+                          // position: absolute;
+                          background-color: $brand-color;
+                          width: 60px !important;
+                          height:60px;
+                          border-radius: 50%;
+                          @include flex-center;
+                          justify-content: center;
+                          position: relative;
+                          bottom: 20px;
+                          margin:0 auto;
+                          
+                          
+                          &::after{
+                              content: "";
+                              width: 20px;
+                              height: 20px;
+                              background: transparent;
+                              position: absolute;
+                              bottom: -18px;
+                              border-top: 10px solid $brand-color;
+                              border-left: 10px solid transparent;
+                              border-right: 10px solid transparent;
+                          }
+                          span{
+                              background-color: $color-white;
+                              width: 40px;
+                              height: 40px;
+                              border-radius: 50%;
+                              @include flex-center;
+                              justify-content: center;
+                              @include outline-shadow;
+                              i{
+                                  color: $black-color;
+                              }
+                              img{
+                                  max-width: 29px;
+                              }
+                          }
+                          
+                  
+                          
+                      }
+                      .ps-top{
+                          text-align: center;
+                          position: relative;
+                          bottom: -70px;
+                      }
+                  }
+              }
+            }
+          
+        
+       
+    }
+}

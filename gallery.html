@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no  shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700s;800;900&display=swap" rel="stylesheet">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./style-en.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="sidebar-btn"><i class="fa fa-2x fa-bars"></i></button>
+        </div>
+        <div class="header-center">
+          <img src="./images/clr-logo.png" alt="" />
+        </div>
+        <div class="header-right">
+          <div class="dropdown custom-dropdown">
+            <button type="button" class="map-pin-btn btn-common dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-compass "></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-camera"></i>Camera</a>
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-video-camera"></i>Video</a>
+              <a class="dropdown-item btn-bg-blk" href="#"><i class="fa fa-microphone"></i>Mic</a>
+            </div>
+          </div>
+          <div class="dropdown custom-dropdown">
+            <button type="button" class="custom-blk-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </button>
+            <div class="dropdown-menu">
+              <div class="profile-img border-bottom">
+                <img src="./images/profile.png" alt=""/>
+                <h6>John Doe</h6>
+              </div>
+              <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>My Profile</a>
+              <a class="dropdown-item " href="user-access.html"><i class="fa fa-share-alt "></i>Shared Apiaries</a>
+              <a class="dropdown-item" href="membership.html"><i class="fa fa-id-card"-alt"></i>Membership </a>
+              <a class="dropdown-item border-bottom " href="Settings.html"><i class="fa fa-cog"></i>Settings </a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </header>
+  <div class="sidebar-nav">
+    <div class="sidebar-nav-header">
+      <img src="./images/sidebar-logo.png" alt="" />
+    </div>
+    <ul class="sidebar-links-ul">
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/apiary.png" alt="" /><span>My Bees</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>My Bees</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="home.html" class="custom-underline-link ">Map</a>
+            
+            </li>
+            <li>
+              <a href="forest-apiary-list.html" class="custom-underline-link">My Apiaries</a>
+            </li>
+            <li>
+              <a href="timeline.html" class="custom-underline-link">My Timeline</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="custom-underline-link">My Gallery</a>
+            </li>
+          
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/observations.png" alt="" /><span>Reports</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Reports</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="ApiaryReporting.html" class="custom-underline-link ">Apiary and Hive Reporting</a>
+            
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Queen Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Harvest Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Forage Reporting</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Other Reporting</a>
+            </li>
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="observation.html" class="custom-underline-link"><img src="./images/action.png" alt="" /><span>Observation</span></a>
+      </li>
+      <li >
+        <a href="action.html" class="custom-underline-link"><img src="./images/inspection.png" alt="" /><span>Action</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/user.png" alt="" /><span>Inspection</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Inspection</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="full-hive-inspection.html" class="custom-underline-link ">Full Hive Inspection</a>
+            
+            </li>
+            <li>
+              <a href="standard-hive.html" class="custom-underline-link">Standard Hive Inspection</a>
+            </li>
+            <li>
+              <a href="apiaryInspection.html" class="custom-underline-link">Apiary Inspection</a>
+            </li>
+            <li>
+              <a href="external-hive-inspection.html" class="custom-underline-link">External Hive Inspection</a>
+            </li>
+            <li>
+              <a href="varroa-check.html" class="custom-underline-link">Varroa Check</a>
+            </li>
+            <li>
+              <a href="dead-hive-inspection.html" class="custom-underline-link">Dead Hive Inspection</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Healthy Colony Checklist</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">First Spring Inspection</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Winter Pack Down Inspection</a>
+            </li>
+          </ul>
+          </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link"><img src="./images/membership.png" alt="" /><span>Hive School</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="custom-underline-link btn-collapse"><img src="./images/settings.png" alt="" /><span>Calendar and Timeline</span></a>
+        <div class="second-sidebar">
+          <div class="sidebar-nav-header">
+            <h5>Calender And Timeline</h5>
+          </div>
+          <ul class="second-sidebar-ul">
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link ">Timeline</a>
+            
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="custom-underline-link">Calendar</a>
+            </li>
+            
+          </ul>
+          </div>
+      </li>
+      
+    </ul>
+  </div>
+    <div class="main-wrapper">
+        <div class="main-wrapper-inner">
+        <section class="timeline">
+          <div class="container">
+        <h4 class="underline-yellow text-center mb-4">Gallery</h4>
+        </div>
+    <div class="ps-timeline-sec">
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-3 col-md-6 py-2">
+                <select id="category" class="custom-selectbox mb-0" name="user_state">
+                    <option value="" disabled="disabled" selected="selected">Apiary Name</option>
+                      <option value="cat 1">Apiary Name 1</option>
+                      <option value="cat 2">Apiary Name 2</option>
+                      <option value="cat 3">Apiary Name 3</option>
+                  </select>
+            </div>
+            <div class="col-xl-3 col-md-6 py-2">
+                <input type="text" class="custom-input" placeholder="Hive Name">
+             </div>
+             <div class="col-xl-3 col-md-6 py-2">
+                 <div class="custom-flex-center-between">
+               <label class="custom-input-label">From</label>
+               <select id="category" class="custom-selectbox mb-0 yellow-select" name="user_state">
+                <option value="" disabled="disabled" selected="selected">January, 2020</option>
+                  <option value="cat 1">Apiary Name 1</option>
+                  <option value="cat 2">Apiary Name 2</option>
+                  <option value="cat 3">Apiary Name 3</option>
+              </select>
+              </div>
+             </div>
+             <div class="col-xl-3 col-md-6 py-2">
+                 <div class="custom-flex-center-between">
+                <label class="custom-input-label">From</label>
+               <select id="category" class="custom-selectbox mb-0 yellow-select" name="user_state">
+                <option value="" disabled="disabled" selected="selected">January, 2020</option>
+                  <option value="cat 1">Apiary Name 1</option>
+                  <option value="cat 2">Apiary Name 2</option>
+                  <option value="cat 3">Apiary Name 3</option>
+              </select>
+            </div>
+            </div>
+            </div>
+          <section class="gallery-sec w-100">
+            <div class="container">
+                <div class="row">
+           <div class="col-sm-12">
+                <div class="observation-btns m-0">
+                    <h4 class="medium text-left">Brood:</h4>
+                    <div class="custom-flex-center">
+                        <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                        <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                        <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                        <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                        <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                        
+                    </div>
+                </div>
+           </div>
+           <div class="col-sm-12">
+            <div class="observation-btns m-0">
+                <h4 class="medium text-left">Bees:</h4>
+                <div class="custom-flex-center">
+                    <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                    <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                    <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                    <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                    <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                    
+                </div>
+            </div>
+       </div>
+       <div class="col-sm-12">
+        <div class="observation-btns m-0">
+            <h4 class="medium text-left">Problem:</h4>
+            <div class="custom-flex-center">
+                <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+                
+            </div>
+        </div>
+   </div>
+   <div class="col-sm-12">
+    <div class="observation-btns m-0">
+        <h4 class="medium text-left">Media Type:</h4>
+        <div class="custom-flex-center">
+            <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+            <a href="javascript:void(0)" class="yellow-transparent-clr">Wet</a>
+        </div>
+    </div>
+</div>
+          <div class="media-gallery w-100">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper audio-video-cntrls" >
+                  <video  muted loop id="my-video">
+                    <source src="./images/rain.mp4" type="video/mp4">
+                    <source src="./images/rain.mp4" type="video/ogg">
+                    Your browser does not support HTML video.
+                  </video>
+                  <div class="play-pause-btn">
+                    <div class="play-btn">
+                    <button class="yellow-link"  id="myBtn" onclick="myFunction()"><i class="fa fa-play-circle"></i><i class="fa fa-pause" aria-hidden="true"></i></button>
+                    </div>
+                    </div>
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                   
+                    <div class="edit-del-btn-wrap wrap-bottom">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                      <a href="javascipt:void(0)" class="yellow-link" data-toggle="modal" data-target="#video-preview-modal"><i class="fa fa-expand"></i></a>
+                     </div>
+                  </div>
+                 
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                
+                <div class="media-gallery-wrapper audio-video-cntrls" style="background-image: url(./images/audio.png);">
+                  <audio id="track">
+                    <source src="./images/horse.ogv" type="audio/mpeg" />
+                  </audio>
+                  <div class="play-pause-btn">
+                    <div class="play-btn">
+                    <button class="yellow-link"  id="play-pause"><i class="fa fa-play-circle"></i><i class="fa fa-pause" aria-hidden="true"></i></button>
+                    </div>
+                    </div>
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="edit-del-btn-wrap wrap-bottom single-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                     </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                <div class="media-gallery-wrapper" style="background-image: url(./images/hive.png);" >
+                  <div class="share-btns-wrap">
+                    <div class="edit-del-btn-wrap">
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-check-circle"></i></a>
+                     <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-trash"></i></a>
+                    </div>
+                    <div class="share-btn">
+                      <a href="javascipt:void(0)" class="yellow-link"><i class="fa fa-share-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+            </div>
+          </div>
+            </div>
+         </section>
+        </div>
+    </div>
+    </section>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+        <h4>© hivekeepers 2020 All Rights Reserved. | Privacy Policy | Terms of Use</h4>
+        </div>
+      </div>
+  <!-- Video Preview Modal Html Start -->
+     <div class="modal fade custom-modal" id="video-preview-modal" tabindex="-1" role="dialog" aria-label="followers-modalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+         <div class="modal-content p-0">
+          <div class="modal-header border-bottom p-0">
+           
+         <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+         <i class="fa fa-times"></i>
+         </button>
+      </div>
+            <div class="modal-body p-0">
+              <div class="add-inventory gallery-video-preview">
+                <div class="video-wrapper">
+                <video  muted loop id="myVideo">
+                  <source src="./images/rain.mp4" type="video/mp4">
+                  <source src="./images/rain.mp4" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video>
+                </div>
+                <div class="play-pause-btn">
+                  <div class="play-btn">
+                  <button class="yellow-link"  id="myBtn" onclick="myFunction()"><i class="fa fa-play-circle"></i><i class="fa fa-pause" aria-hidden="true"></i></button>
+                  </div>
+                  </div>
+              </div>
+            
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--Video Preview Modal Html end -->
+ <script>
+   var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+var track = document.getElementById('track');
+var controlBtn = document.getElementById('play-pause');
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+function playPause() {
+if (track.paused) {
+track.play();
+
+} else { 
+track.pause();
+ 
+}
+}
+controlBtn.addEventListener("click", playPause);
+track.addEventListener("ended", function() {
+});
+ </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script src="js/slider.js"></script>
+
+
+
+
+</body>
+
+</html>

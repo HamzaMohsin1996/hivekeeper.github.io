@@ -1,0 +1,63 @@
+.select-date{
+    max-width: 300px;
+    margin: 10px auto ;
+   .custom-selectbox{
+       max-width: 230px;
+   }
+}
+
+.hives-list{
+    padding: 30px 0;
+   
+    .slick-slide{
+        &.slick-active:nth-child(1){
+                .hives-list-inner{
+                    .hive-list-img-wrap{
+                        width: 84px;
+                        height: 84px;
+                    }
+                    h6{
+                        font-size: 14px;
+                        color:  $grey-clr-light;
+                    }
+                } 
+        }
+    }
+    .slick-center{
+        .hives-list-inner{
+            .hive-list-img-wrap{
+                width: 138px;
+                height: 138px;
+            }
+            h6{
+                font-size: 22px;
+                color: $black-color;
+            }
+        } 
+    }
+    .hives-list-inner{
+        text-align: center;
+        .hive-list-img-wrap{
+            width:112px;
+            height: 112px;
+            border-radius: 50%;
+            position: relative;
+            margin: 1rem auto;
+            img{
+                max-width: 100%;
+            }
+        &::before{
+            content:'';
+            @include top-bottom-layer;
+            background: rgba($color: $brand-color, $alpha: 0.5);
+            border-radius: 50%;
+        }
+        
+        }
+        h6{
+            font-size: 18px;
+            color: $grey-clr-light;
+        }
+      
+    }
+}
